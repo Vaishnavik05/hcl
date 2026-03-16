@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <input type="text" id="todofield" placeholder="Add a todo...">
+        <button onclick="addTodo()">Add</button>
+    </header>
+    <ul id="todolist">
+    </ul>
+    <script>
+        function addTodo() {
+            const todofield = document.getElementById('todofield')
+            let todo = todofield.value
+            todofield.value = ''
+
+            // Todo List
+            let todolist = document.getElementById('todolist')
+            let newli = document.createElement('li')
+            newli.textContent = todo
+            todolist.appendChild(newli)
+        }
+    </script>
+</body>
+
+</html>

@@ -90,4 +90,51 @@
 // let{country='India'}=person
 // console.log(country)
 
+//? Spread with arrays
+// let arr1=[1,2,3]
+// let arr2=[4,5]
+// let combined=[...arr1,...arr2]
+// console.log(combined)
+
+//? copy array using spread
+// nums=[10,20,30]
+// copy=[...nums]
+// copy.push(40)
+// console.log(nums)
+
+//? Spread with objects
+// let person={name:"Pattu", age:21};
+// let details={...person, city:"Delhi"};
+// console.log(details)
+
+//? Spread in fn call
+// let nums=[2,4,6];
+// function sum(a,b,c){
+//     return a+b+c;
+// }
+// console.log(sum(...nums));
+
+//? Rest operators
+// function add(...nums){
+//     sum=0
+//     for(let i=0;i<nums.length;i++){
+//         sum+=nums[i]
+//     }
+//     return sum
+// }
+// console.log(add(1,2,3,4,5))
+
+//? rest in destructuring array
+// let nums=[10,20,30,40,50]
+// const [first, second, ...rest]=nums
+// console.log(first, second, rest)
+
+//? rest in destructuring object
+// let person={
+//     name:"Alice",
+//     age:25,
+//     city:"New York"
+// }
+// let {name, ...details}=person
+// console.log(name, details)
 

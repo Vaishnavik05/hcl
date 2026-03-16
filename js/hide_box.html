@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" class="box"></div>
+    <button onclick="toggleBox()">Toggle Box</button>
+    <script>
+        function toggleBox() {
+            let box = document.getElementById('box')
+            box.classList.toggle('hidden')
+        }
+    </script>
+</body>
+
+</html>
